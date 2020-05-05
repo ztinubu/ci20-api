@@ -1,0 +1,132 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body {
+  /*background-color: white;*/
+  font-size: 24px;
+  /*font-family: 'Work Sans', sans-serif;*/
+  width: 100% ;
+  height:100%; 
+  margin: 0 auto;
+  /*position: fixed;*/
+  /*text-overflow: scroll;*/
+}
+a {
+  color: #1b1c1b;
+  text-decoration: none;
+  font-size: 100px;
+  text-align: left;
+  margin: 20px;
+  float: right;
+
+  /*-webkit-text-stroke: 1px white;*/
+
+}
+
+.result a:hover {
+  /*opacity: 0.25;*/
+  color: white;
+
+}
+
+.reviews {
+  list-style-type: none;
+   float: right;
+  /*margin: 2em 0;*/
+}
+/*span {
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+*/
+
+.articles img {
+  display: block; 
+  margin: 0.5em 0;
+}
+
+#waterfall-results {
+margin: 0;
+padding: 25px;
+width: 50%;
+float: right;
+box-sizing: border-box;
+position:fixed;
+overflow-y:scroll;
+overflow-x:hidden;
+height: 100%;
+display: block;
+background-color: black;
+}
+
+p {
+  margin: 0;
+}
+.result {
+  text-overflow: ellipsis;
+  text-align: left;
+  line-height: 60px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid white;
+
+}
+.left-half {
+  background-color: black;
+  width: 50%;
+  /*height: 100%;*/
+  float: right;
+  top: 30px;
+  /*display: flex;*/
+}
+.left-half a {
+  margin: 0 auto;
+  /*color: black;*/
+  top: 30px;
+  /*width: 300px;
+  height: 300px;*/
+  right: 20px;
+  margin-top: 30px;
+  margin-right: 50px;
+  /*position:relative;
+  overflow-y:scroll;
+  overflow-x:hidden;*/
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  filter: contrast(100%);
+  /*filter: hue-rotate(90deg);*/
+  filter: invert(55%);
+  /*border: 10px solid black;*/
+  margin-right: 10px;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  animation: blinker 5s linear infinite;
+  border-radius: 3px;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+
+}
+h1 {
+  align-items: center;
+  margin-left: 20px;
+  position: sticky;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+
